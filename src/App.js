@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
-function App() {
+function master() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="master">
+      {navigation()}
+      {SecondColumn()}
+      {ThirdColumn()}
     </div>
   );
+}
+
+function ThirdColumn() {
+  return <div id="ThirdColumn">Server Chat and DM Chat</div>;
+}
+
+function SecondColumn() {
+  return (
+    <div id="SecondColumn">
+      {SecondColumnInterface()}
+      {profile()}
+    </div>
+  );
+}
+function SecondColumnInterface(){
+  return(
+    <div id="SecondColumnInterface">
+      Channel Interface
+    </div>
+  )
+}
+
+function profile() {
+  return <div id="profile">User Profile</div>;
+}
+
+function navigation() {
+  return <div id="navigation">Navigation</div>;
+}
+
+function App() {
+  return <div>{master()}</div>;
 }
 
 export default App;
