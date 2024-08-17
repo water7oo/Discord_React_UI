@@ -1,0 +1,5 @@
+Design Overall Interface of Discord
+
+Be able to send messages to a chat
+
+Be able to make a server
