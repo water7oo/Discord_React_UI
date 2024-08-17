@@ -22,12 +22,8 @@ function SecondColumn() {
     </div>
   );
 }
-function SecondColumnInterface(){
-  return(
-    <div id="SecondColumnInterface">
-      Channel Interface
-    </div>
-  )
+function SecondColumnInterface() {
+  return <div id="SecondColumnInterface">Channel Interface</div>;
 }
 
 function profile() {
@@ -39,7 +35,15 @@ function navigation() {
 }
 
 function App() {
-  return <div>{master()}</div>;
+  return (
+    <div>
+      <button class="font-mono">Hello</button>
+      <p class="TailwindTest">
+        React and Tailwind css is cool as fuck
+      </p>
+      {master()}
+    </div>
+  );
 }
 
 export default App;
