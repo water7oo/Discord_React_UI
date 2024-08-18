@@ -1,5 +1,4 @@
 Design Overall Interface of Discord
 
-Be able to send messages to a chat
+Mockup server will already be made
 
-Be able to make a server
